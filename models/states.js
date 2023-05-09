@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     visited: DataTypes.BOOLEAN,
     lat: DataTypes.FLOAT,
-    long: DataTypes.FLOAT,
+    lon: DataTypes.FLOAT,
     zoom: DataTypes.INTEGER
   }, {
     sequelize,
