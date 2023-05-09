@@ -1,0 +1,4 @@
+seeders provides instructions for supplying data to the app, preventing manual data entry
+
+npx sequelize seed:generate --name create-states
+
