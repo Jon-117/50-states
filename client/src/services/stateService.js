@@ -13,5 +13,10 @@ export default {
         return axios.patch('/api/states/' + stateName, data).then( response => {
             return response.data // anything other than 200 will not be caught here, use catch()
         })
+    },
+    getOneState(stateName) {
+        return axios.get('/api/state/' + stateName).then(response => {
+            return response.data
+        })
     }
 }

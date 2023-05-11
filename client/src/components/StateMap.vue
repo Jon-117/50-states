@@ -21,11 +21,19 @@
 export default {
     name: 'StateMap',
     data(){
-        return{
+        return {
             state: {} // works with mounted this.state.name to grab the state from the route parameter defined in @/router/index.js's routes
     }},
     mounted() {
         this.state.name = this.$route.params.state
+        this.fetchStateData()
+    },
+    methods: {
+        fetchStateData(){
+            this.$stateService.getOneState(this.state.name).then( state => {
+                this.state = state
+            })
+        }
     }
 }
 
