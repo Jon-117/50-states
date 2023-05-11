@@ -7,5 +7,11 @@ export default {
             return response.data
 
         })
+    },
+    setVisited(stateName, visited) {
+        let data = {visited: visited}
+        return axios.patch('/api/states/' + stateName, data).then( response => {
+            return response.data // anything other than 200 will not be caught here, use catch()
+        })
     }
 }
