@@ -5,6 +5,7 @@ let router = express.Router()
 
 router.get('/states', function (req, res, next){
     States.findAll({ order:['name']}).then( states => {
+        console.log(states)
         return res.json(states)
     }).catch(err => next(err))
 })
