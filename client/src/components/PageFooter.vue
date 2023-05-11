@@ -11,6 +11,7 @@
       </div>
       <div>
           <p>Header image by <a href="https://unsplash.com/photos/_CL-l9Q9oYM">David Martin</a></p>
+          <a target="_blank" href="https://icons8.com/icon/118636/world-map">Map</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
       </div>
   </div>
 

@@ -29,6 +29,8 @@ export default {
                 this.states = states
             })
         },
+
+
         updateVisited(stateName, visited){
             this.$stateService.setVisited(stateName,visited).then( () =>{
                 this.fetchAllStates()
@@ -51,6 +53,7 @@ export default {
 }
 
 .state-container {
+    color: white;
     margin: 1rem;
 }
 
